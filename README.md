@@ -12,7 +12,7 @@
            <p class="titulos_input" ><strong>E-mail</strong></p>
           <input type="email" placeholder="Digite seu Email" class="input" required>
           <p class="titulos_input"> <strong>Senha</strong></p>
-          <input type="" placeholder="Digite sua senha" class="input" required>
+          <input type="password" placeholder="Digite sua senha" class="input" required>
            <br><br>
            <a href="senha.html">Esqueci minha senha</a>
            <br><br>
