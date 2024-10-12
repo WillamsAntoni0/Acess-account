@@ -1,0 +1,107 @@
+.input {
+    padding: 12px;
+    width: 108%;
+    position: relative;
+    right:8%;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    transition: border-color 0.3s ease;
+    
+    }
+
+    .input:focus {
+        border-bottom-color: #1bc963; /* Cor da linha ao clicar */
+    }
+
+
+
+
+.tela {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 4%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+button {
+    padding: 15px;
+    width: 117%;
+     background-color: #ff0676;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    right: 8%;
+    
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #ff0676;
+}
+
+body {
+    background-color: #0d0da4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#place{
+    position: relative;
+    left: -10%;
+    top: 38px;
+    bottom: 40px;
+    color: #808080;
+    
+}
+
+p{
+    position: relative;
+    left: 3%;
+    color: #808080;
+}
+
+h2{
+    position: relative;
+    left: -3%;
+    color: #544ce5;
+}
+
+#p-1{
+      position: relative;
+      top: 20px;
+      left: 10%;
+}
+
+#p-2{
+      position: relative;
+      left: 8%;
+      bottom: 10px;
+      color: #808080;
+}
+
+#p-3{
+      position: relative;
+      left: 9%;
+      bottom: 20px;
+      color: #808080;
+}
+
+a {
+        
+        color: #544ce5;
+        position: relative;
+        top: 10px;
+        left: 38%;
+    }
+
+    .texto{
+           position: relative;
+           right: 5%;
+    }
