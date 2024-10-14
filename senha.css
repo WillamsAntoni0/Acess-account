@@ -1,25 +1,34 @@
 .input {
-    padding: 12px;
-    width: 108%;
-    outline-color: #f72585;
+    padding: 2.5vh;
+    width: 40vh;
     position: relative;
-    right:8%;
-}
+    left:0.2vh;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-size: 2.2vh;
+    
+    }
 
-.tela {
-    display: inline-block;
-    background-color: #ffffff;
-    padding: 4%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-}
+    .input:focus {
+        border-bottom-color:#00bfff; /* Cor da linha ao clicar */
+    }
 
+
+    .tela {
+        display: inline-block;
+        background-color: #ffffff;
+        padding: 5vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+    }
 button {
-    padding: 15px;
-    width: 115%;
+    padding: 2.5vh;
+    width: 40vh;
     transform: scale(1.05);
     background-color: #ff0676;
     border-radius: 5px;
@@ -29,6 +38,13 @@ button {
     user-select: none;
     position: relative;
     right: 8%;
+    position: relative;
+    left: 2vh;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #ff0676;
 }
 
 body {
@@ -37,11 +53,12 @@ body {
 }
 
 #place{
-    position: relative;
-    right: 8%;
-    top: 20%;
     color: #544ce5;
-}
+    position: relative;
+    left: 1vh;
+    top: 0.5vh;
+    }
+    
 
 p{
     position: relative;
@@ -55,16 +72,22 @@ h2{
     color: #544ce5;
 }
 
+#p-1{
+       position: relative;
+       left: 5vh;
+}
+
+
 #p-2{
       position: relative;
-      left: 8%;
+      left: 6vh;
       bottom: 10px;
       color: #808080;
 }
 
 #p-3{
       position: relative;
-      left: 9%;
+      left: 7vh;
       bottom: 20px;
       color: #808080;
 }
@@ -81,3 +104,5 @@ a {
            position: relative;
            right: 5%;
     }
+
+
