@@ -1,13 +1,15 @@
 .input {
-    padding: 5%;
-    width: 95%;
+    padding: 2.4vh;
+    width: 36vh;
     outline-color: #f72585;
+    position: relative;
+    left: 1vh;
 }
 
 .tela {
     display: inline-block;
     background-color: #ffffff;
-    padding: 3%;
+    padding: 3vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,19 +23,23 @@ body {
 }
 
 button {
-    padding: 5%;
-    width: 95%;
+    padding: 2.5vh;
+    width: 41.5vh;
     background-color: #f72585;
     border-radius: 5px;
     border: none;
     color: #ffffff;
     cursor: pointer;
     user-select: none;
+    position: relative;
+    left: 1vh;
 }
 
 a {
     text-decoration: none;
     color: #808080;
+    position: relative;
+    left: 2vh;
 }
 
 p {
@@ -47,8 +53,15 @@ button:hover {
 
 .titulos_input {
     color: #000000;
+    position: relative;
+    left: 2vh;
+    top: 15px;
 }
 
 h1 {
     color: #000000;
+}
+
+#senha1{
+      font-size: 2vh;
 }
