@@ -57,6 +57,7 @@ a {
 
 p {
     color: #808080;
+    user-select:none;
 }
 
 .titulos_input {
@@ -68,6 +69,7 @@ p {
 
 h1 {
     color: #544ce5;
+    user-select:none;
 }
 
 i {
