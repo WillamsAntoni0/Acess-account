@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-<script src="https://kit.fontawesome.com/6ca0558071.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6ca0558071.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="form1.css">
    </head>
 <body>
