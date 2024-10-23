@@ -1,47 +1,49 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="redefinir.css">
-    <script>
-        function togglePasswordVisibility(index) {
-            const passwordField = document.querySelectorAll('.password-input')[index];
-            const eyeIcon = document.querySelectorAll('.toggle-eye')[index];
-        if (passwordField.type === 'password') {
-                passwordField.type = 'text';
-                eyeIcon.classList.remove('fa-eye-slash');
-                eyeIcon.classList.add('fa-eye');
-            } else {
-                passwordField.type = 'password';
-                eyeIcon.classList.remove('fa-eye');
-                eyeIcon.classList.add('fa-eye-slash');
-            }
-        }
-    </script>
-</head>
+    <title>Login</title>
+<script src="https://kit.fontawesome.com/6ca0558071.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="form1.css">
+   </head>
 <body>
-    <form action="">
-        <div class="div-mae">
-            <h1>Redefinir sua senha</h1>
-            <p id="titulo">Preencha os campos abaixo</p>
-            <p id="titulo-1">Digite sua nova senha</p>
-            <br>
+    <div class="tela">
+        <form>
+            <h1>Login</h1>
+            <p>Digite os dados de acesso nos campos abaixo</p>
+            <p class="titulos_input"><strong>E-mail</strong></p>
+            <input type="email" placeholder="Digite seu Email" class="input" required>
+             <p class="titulos_input"><strong>Senha</strong></p>
             <div class="input-wrapper">
-                <input type="password" class="password-input" required>
-                <i class="fa fa-eye-slash toggle-eye" onclick="togglePasswordVisibility(0)"></i>
+                <input type="password" placeholder="Digite sua senha" class="input" id="senha1" required>
+                <i class="fa-regular fa-eye" id="eye1"></i>
             </div>
-            <br><br><br>
-            <div class="input-wrapper">
-                <input type="password" class="password-input" required>
-                <i class="fa fa-eye-slash toggle-eye" onclick="togglePasswordVisibility(1)"></i>
-            </div>
+             <br><br>
+            <a href="senha.html">Esqueci minha senha</a>
             <br><br>
-            <button type="submit"><strong>REDEFINIR</strong></button>
-            <br>
-            <a href="">Cancelar</a>
-        </div>
-    </form>
+            <button><strong>Acessar</strong></button>
+        </form>
+    </div>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const togglePasswordIcon = document.getElementById('eye1');
+            const passwordInput = document.getElementById('senha1');
+togglePasswordIcon.addEventListener('click', function () {
+                const isPasswordVisible = passwordInput.getAttribute('type') === 'password';
+           if (isPasswordVisible) {
+                    passwordInput.setAttribute('type', 'text');
+                    togglePasswordIcon.classList.add('eye-active');
+                    togglePasswordIcon.classList.remove('fa-eye');
+                    togglePasswordIcon.classList.add('fa-eye-slash');
+                } else {
+                    passwordInput.setAttribute('type', 'password');
+                    togglePasswordIcon.classList.remove('eye-active');
+                    togglePasswordIcon.classList.remove('fa-eye-slash');
+                    togglePasswordIcon.classList.add('fa-eye');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
