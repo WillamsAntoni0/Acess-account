@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Link para a biblioteca Font Awesome -->
+    <script src="https://kit.fontawesome.com/6ca0558071.js" crossorigin="anonymous"></script>
+
+    <!-- Estilo CSS -->
+    <style>
+        .input-wrapper {
+            position: relative;
+            width: fit-content;
+            display: inline-block;
+        }
+
+        .input {
+            padding: 2.4vh;
+            width: 41.5vh;
+            outline-color: #f72585;
+            position: relative;
+            left: 1vh;
+            padding-right: 35px; /* Espaço para o ícone dentro do input */
+        }
+
+        .tela {
+            display: inline-block;
+            background-color: #ffffff;
+            padding: 3vh;
+            padding-right: 5vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+
+        body {
+            background-color: #0d0da4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            padding: 2.5vh;
+            width: 48.5vh;
+            background-color: #f72585;
+            border-radius: 5px;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+            left: 1vh;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background-color: #ff0676;
+        }
+
+        a {
+            text-decoration: none;
+            color: #808080;
+            position: relative;
+            left: 2vh;
+        }
+
+        p {
+            color: #808080;
+        }
+
+        .titulos_input {
+            color: #544ce5;
+            position: relative;
+            left: 2vh;
+            top: 15px;
+        }
+
+        h1 {
+            color: #544ce5;
+        }
+
+        i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        /* Estilo para quando o ícone estiver ativo */
+        .eye-active {
+            color: #1bc963; /* Cor ao clicar no ícone */
+            transition: color 0.3s ease; /* Transição suave ao mudar a cor */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="tela">
+        <form>
+            <h1>Login</h1>
+            <p>Digite os dados de acesso nos campos abaixo</p>
+            
+            <p class="titulos_input"><strong>E-mail</strong></p>
+            <input type="email" placeholder="Digite seu Email" class="input" required>
+            
+            <p class="titulos_input"><strong>Senha</strong></p>
+            <div class="input-wrapper">
+                <input type="password" placeholder="Digite sua senha" class="input" id="senha1" required>
+                <i class="fa-regular fa-eye" id="eye1"></i>
+            </div>
+            
+            <br><br>
+            <a href="senha.html">Esqueci minha senha</a>
+            <br><br>
+            <button><strong>Acessar</strong></button>
+        </form>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const togglePasswordIcon = document.getElementById('eye1');
+            const passwordInput = document.getElementById('senha1');
+
+            togglePasswordIcon.addEventListener('click', function () {
+                const isPasswordVisible = passwordInput.getAttribute('type') === 'password';
+
+                if (isPasswordVisible) {
+                    passwordInput.setAttribute('type', 'text');
+                    togglePasswordIcon.classList.add('eye-active');
+                    togglePasswordIcon.classList.remove('fa-eye');
+                    togglePasswordIcon.classList.add('fa-eye-slash');
+                } else {
+                    passwordInput.setAttribute('type', 'password');
+                    togglePasswordIcon.classList.remove('eye-active');
+                    togglePasswordIcon.classList.remove('fa-eye-slash');
+                    togglePasswordIcon.classList.add('fa-eye');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

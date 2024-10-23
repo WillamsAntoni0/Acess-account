@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="senha.css">
+    <title>Redefinir Senha</title>
+    <script>
+        function validarFormulario(event) {
+            event.preventDefault(); // Impede o comportamento padrão de envio do formulário
+
+            // Obtém o valor do input com a classe correta
+            var input = document.querySelector('.input').value;
+
+            if (input.trim() === "") { // Verifica se o campo está vazio (trim() remove espaços em branco)
+                alert("Por favor, preencha o campo E-mail ou Usuário.");
+                return false; // Não permite prosseguir
+            } else {
+                // Redireciona para a próxima tela
+                window.location.href = "redef.html";
+            }
+        }
+    </script>
+<script> src="https://kit.fontawesome.com/6ca0558071.js" </script>
+</head>
+<body>
+   <div class="tela">
+    <form onsubmit="validarFormulario(event)"> <!-- Adicionado o evento onsubmit -->
+       <h2>Esqueci minha senha</h2>
+      <div class="texto">
+       <p id="p-1">Para redefinir sua senha, informe o usuário</p>
+       <p id="p-2">ou e-mail cadastrado na sua conta e lhe</p>
+       <p id="p-3">enviaremos um link com as instruções</p>
+       </div>
+       <strong id="place" >E-mail ou usuário</strong>
+       <br>
+       <input type="text" class="input" placeholder="Digite seu e-mail ou usuário"> <!-- Corrigido para .input -->
+       <br><br>
+       <button type="submit"><strong >PRÓXIMO</strong></button> <!-- Certifique-se de que o botão é de submit -->
+       <br>
+       <a href="#">Cancelar</a>
+       </form>
+    </div>
+ </body>
+</html>
