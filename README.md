@@ -12,7 +12,7 @@
             <p>Digite os dados de acesso nos campos abaixo</p>
             <p class="titulos_input"><strong>E-mail</strong></p>
             <input type="email" placeholder="Digite seu Email" class="input" required>
-             <p class="titulos_input"><strong>Senha</strong></p>
+            <p class="titulos_input"><strong>Senha</strong></p>
             <div class="input-wrapper">
                 <input type="password" placeholder="Digite sua senha" class="input" id="senha1" required>
                 <i class="fa-regular fa-eye" id="eye1"></i>
@@ -23,13 +23,13 @@
             <button><strong>Acessar</strong></button>
         </form>
     </div>
-<script>
+  <script>
         document.addEventListener("DOMContentLoaded", function () {
             const togglePasswordIcon = document.getElementById('eye1');
             const passwordInput = document.getElementById('senha1');
 togglePasswordIcon.addEventListener('click', function () {
                 const isPasswordVisible = passwordInput.getAttribute('type') === 'password';
-           if (isPasswordVisible) {
+if (isPasswordVisible) {
                     passwordInput.setAttribute('type', 'text');
                     togglePasswordIcon.classList.add('eye-active');
                     togglePasswordIcon.classList.remove('fa-eye');
