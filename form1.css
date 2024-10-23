@@ -6,7 +6,7 @@
 
 .input {
     padding: 2.4vh;
-    width: 41.5vh;
+    width: 48.5vh;
     outline-color: #f72585;
     position: relative;
     left: 1vh;
@@ -32,7 +32,7 @@ body {
 
 button {
     padding: 2.5vh;
-    width: 41.5vh;
+    width: 48.5vh;
     background-color: #f72585;
     border-radius: 5px;
     border: none;
@@ -72,7 +72,7 @@ h1 {
 
 i {
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
