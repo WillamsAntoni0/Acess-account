@@ -82,6 +82,6 @@ i {
 
 /* Estilo para quando o ícone estiver ativo */
 .eye-active {
-    color: #1bc963; /* Cor ao clicar no ícone */
+    color:  #f72585; /* Cor ao clicar no ícone */
     transition: color 0.3s ease; /* Transição suave ao mudar a cor */
 }
