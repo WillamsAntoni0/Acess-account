@@ -17,7 +17,7 @@
     display: inline-block;
     background-color: #ffffff;
     padding: 3vh;
-    padding-right: 5vh;
+    padding-right: 3vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,7 +32,7 @@ body {
 
 button {
     padding: 2.5vh;
-    width: 48.5vh;
+    width: 41.5vh;
     background-color: #f72585;
     border-radius: 5px;
     border: none;
